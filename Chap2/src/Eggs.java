@@ -7,8 +7,8 @@ public class Eggs {
 
 	public static void main(String[] args) {
 		//Variables for prices and totals
-		final double PER_DOZEN = 3.25;
-		final double PER_EGG = .45;
+		final double PRICE_PER_DOZEN = 3.25;
+		final double PRICE_PER_EGG = .45;
 		double costTotal;
 		int totalEggs;
 		int dozenEggs;
@@ -26,16 +26,16 @@ public class Eggs {
 		looseEggs = totalEggs % 12;
 		
 		//Provides total cost for customer purchase
-		costTotal = (PER_DOZEN * dozenEggs) + (PER_EGG * looseEggs);
+		costTotal = (PRICE_PER_DOZEN * dozenEggs) + (PRICE_PER_EGG * looseEggs);
 		
         //Cost of egg in cents without decimal
-		wholeNumber = (int)(PER_EGG*100);
+		wholeNumber = (int)(PRICE_PER_EGG*100);
 		
 		//Displays calculated values
 		System.out.printf("You ordered %,d eggs. That's %,d dozen eggs"
 				+ " at $%,.2f and %,d loose eggs at %,d cents each"
 				+ " for a total of $%,.2f.\n"
-				, totalEggs, dozenEggs, PER_DOZEN, looseEggs, wholeNumber, costTotal);
+				, totalEggs, dozenEggs, PRICE_PER_DOZEN, looseEggs, wholeNumber, costTotal);
 	}
 
 }

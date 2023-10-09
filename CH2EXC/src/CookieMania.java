@@ -14,9 +14,9 @@ public class CookieMania {
 		double allCookiesTotal;
 		
 		Scanner keyboard = new Scanner(System.in);
-		System.out.print("Enter number of boxes of Chocolate Chip cookies ordered >> ");
+		System.out.print("Enter number of boxes of Chocolate Chip Cookies ordered >> ");
 		numberChocChip = keyboard.nextInt();
-		System.out.print("Enter number of boxes of Oatmeal cookies ordered >> ");
+		System.out.print("Enter number of boxes of Oatmeal Raisin Cookies ordered >> ");
 		numberOatmeal = keyboard.nextInt();
 		keyboard.close();
 		
@@ -24,13 +24,13 @@ public class CookieMania {
 		totalOatmeal = numberOatmeal * OATMEAL_RAISIN_PRICE;
 		allCookiesTotal = totalChocChip + totalOatmeal;
 		
-		System.out.printf("%,d boxes of Chocolate Chip Cookies ordered at $%,.2f each.\n",numberChocChip,CHOCOLATE_CHIP_PRICE);
+		System.out.printf("\n%,d boxes of Chocolate Chip Cookies ordered at $%,.2f each.\n",numberChocChip,CHOCOLATE_CHIP_PRICE);
 		System.out.printf("\tTotal is $%,.2f", totalChocChip);
 		System.out.println();
-		System.out.printf("%,d boxes of Oatmeal Cookies ordered at $%,.2f each.\n",numberOatmeal,OATMEAL_RAISIN_PRICE);
-		System.out.printf("\tTotal is $%,.2f", totalOatmeal);
+		System.out.printf("%,d boxes of Oatmeal Raisin Cookies ordered at $%,.2f each.\n",numberOatmeal,OATMEAL_RAISIN_PRICE);
+		System.out.printf("\tTotal is $%,.2f.", totalOatmeal);
 		System.out.println();
-		System.out.printf("Grand total for all boxes of cookies ordered is $%,.2f",allCookiesTotal);
+		System.out.printf("Grand total for all boxes of cookies ordered is $%,.2f.",allCookiesTotal);
 	}
 
 }
